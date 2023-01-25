@@ -1,0 +1,15 @@
+/*
+this si my comment
+*/
+h3{
+    color:aquamarine;
+}
+/*style to a class*/
+.redClass{
+    color: red;
+}
+
+/*style to an id*/
+#yellowH1{
+    color: #F04A6E ;
+}
