@@ -9,4 +9,6 @@ class Employee(db.Model):
     dep_id= db.Column(db.Integer, nullable = False)
     dep_name = db.Column(db.String(5), nullable=True)
     emp_role=db.Column(db.String(20), nullable=True)
-    manager_id=db.Column(db.Integer, db.ForeignKey('manager.man_id'), nullable = True)
+    manager_id=db.Column(db.Integer, db.ForeignKey('manager.man_id', ondelete="CASCADE"), nullable = True)
+
+    manager = db.relationship("Manager", back_populates="employees")
