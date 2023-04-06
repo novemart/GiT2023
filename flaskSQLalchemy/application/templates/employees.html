@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Page</title>
+</head>
+<body>
+<div>
+{% for emp in employees %}
+   <p>{{emp.emp_id}} {{emp.first_name}} {{emp.last_name}} {{emp.role}}</p>
+{% endfor %}
+    <br>
+    {{ message }}
+</div>
+</body>
+</html>
+
