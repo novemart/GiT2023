@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<h3>Manager and Employees Details</h3>
+<p>{{manager.first_name}} {{manager.last_name}}</p>
+<div class="error_message">{{message}}</div>
+<div>
+    {% for emp in manager.employees %}
+    <ul>
+        <li>Employee details: {{emp.first_name}} {{emp.last_name}} </li>
+    </ul>
+{% endfor %}
+</div>
+{% endblock %}
+{% block footer_content %}
+<footer>
+     &copy; 2023
+</footer>
+{% endblock %}
+
+

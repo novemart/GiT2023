@@ -1,0 +1,27 @@
+body{
+  width: 90%;
+  margin: auto;
+  font-family: "Helvetica Neue";
+  background-color: lightblue;
+}
+
+h1 {
+  font-family: verdana;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 24px;
+}
+footer{
+  font-size: 1.2em;
+  text-align: center;
+  color: gray;
+}
+
+.error_message{
+  font-size: 1.3em;
+  color: red;
+}
